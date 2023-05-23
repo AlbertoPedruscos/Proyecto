@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./IMG/user.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <form action="contra.php" method="post">
+    <div class="box">
+        <div class="container">
+            <div class="top">
+                <header>Iniciar Sesion</header>
+            </div>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Usuario" id="username" name="user">
+                <i class='bx bx-user'></i>
+                <label id="wusername" style="color:rgb(255, 15, 15)"></label>
+            </div>
+
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Contraseña" id="password" name="contra">
+                <i class='bx bx-lock-alt'></i>
+                <label id="wpassword" style="color:rgb(255, 15, 15)"></label></br>
+                <a class="pass" href="recover.html">Olvidaste la contraseña?</a>
+            </div>
+            <br>
+            <div class="input-field">
+                <input type="submit" class="submit" onclick="validacionLogin()">
+                <a class="new-acount" href="recover.html">¿Aún no tienes una cuenta?</a>
+            </div>
+        </div>
+    </form>
+    </div>
+    <script src="JS/particles.min.js"></script>
+    <script src="JS/particulas.js"></script>
+</body>
+</html>
+
